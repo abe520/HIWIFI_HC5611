@@ -18,7 +18,7 @@ jobs:
       - name: install ev
         run: |
           sudo -E apt-get update
-          sudo -E apt-get -y install subversion g++ zlib1g-dev build-essential git python rsync man-db
+          sudo -E apt-get -y install subversion g++ zlib1g-dev build-essential git python3 rsync man-db
           sudo -E apt-get -y install libncurses5-dev gawk gettext unzip file libssl-dev wget zip time
           sudo -E apt-get autoclean
           sudo -E apt-get clean
@@ -29,7 +29,7 @@ jobs:
       #更换自己的软件源
         run: |
           git clone https://github.com/Lienol/openwrt.git
-          git clone https://github.com/LailuoA77/HIWIFI_HC5611.git      
+          git clone https://github.com/abe520/HIWIFI_HC5611.git      
           echo "数据克隆结束！"
           
       #将文件覆盖到openwrt根目录下
